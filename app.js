@@ -14,7 +14,7 @@ var scores, roundScore, activePlayer, prevDice, winningScore, isGamePlaying;
 init();
 
 document.querySelector(".dice").style.display = "none";
-document.querySelector(".btn-hold").style.display = "none";
+// document.querySelector(".btn-hold").style.display = "none";
 
 document.querySelector(".btn-roll").addEventListener("click", function() {
   if (isGamePlaying) {
@@ -74,7 +74,8 @@ function init() {
   activePlayer = 0;
   roundScore = 0;
   prevDice = 0;
-  winningScore = 100;
+  winningScore = document.querySelector(".winnScore").value;
+  document.getElementsByClassName("winnScore").innerHTML = winningScore;
   isGamePlaying = true;
 
   document.getElementById("score-0").textContent = "0";
