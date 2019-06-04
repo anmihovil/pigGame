@@ -158,7 +158,16 @@ i {
 .dice {
   position: absolute;
   left: 50%;
-  top: 178px;
+  top: 128px;
+  transform: translateX(-50%);
+  height: 100px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+
+.dice1 {
+  position: absolute;
+  left: 50%;
+  top: 258px;
   transform: translateX(-50%);
   height: 100px;
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
@@ -175,9 +184,8 @@ i {
   border: #eb4d4d 1px solid;
   font-family: Lato;
   font-size: 20px;
-  padding: 5px;
+  padding: 10px;
   text-transform: uppercase;
-  cursor: pointer;
   font-weight: 300;
 }
 
